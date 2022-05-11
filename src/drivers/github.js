@@ -277,7 +277,7 @@ class Github {
           '_work'
         )}" ${single ? ' --ephemeral' : ''}`
       );
-
+      throw new Error("fail here")
       return spawn(resolve(workdir, 'run.sh'), {
         shell: true
       });
